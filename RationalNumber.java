@@ -35,4 +35,21 @@ public class RationalNumber extends RealNumber{
   public String toString(){
     return ""+numerator+"/"+denominator;
   }
+
+  public static int gcd(int a, int b){
+    int bigger=0;
+    int smaller=0;
+    int ans=0;
+    int r=0;
+    boolean limiter=true;
+    if(a>b){bigger=a; smaller=b;}else{bigger=b; smaller=a;}
+    for(int i=0;limiter;i++){
+      r=bigger%smaller;
+      if(r==0){ans=smaller; limiter=false;}else{
+        bigger=smaller;
+        smaller=r;
+      }
+    }
+    return ans;
+  }
 }
