@@ -52,4 +52,10 @@ public class RationalNumber extends RealNumber{
     }
     return ans;
   }
+
+  private void reduce(){
+    int gcd=gcd(numerator, denominator);
+    numerator=numerator/gcd;
+    denominator=denominator/gcd;
+  }
 }
