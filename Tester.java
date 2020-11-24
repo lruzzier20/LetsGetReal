@@ -6,5 +6,8 @@ public class Tester{
     System.out.println(a.add(b));
     System.out.println(a.multiply(b));
     System.out.println(a.divide(b));
+    System.out.println(a.subtract(b));
+    RationalNumber c = new RationalNumber(0, 1);
+    System.out.println(c);
   }
 }
