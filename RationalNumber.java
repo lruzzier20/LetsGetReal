@@ -6,12 +6,14 @@ public class RationalNumber extends RealNumber{
     super(0.0);
     numerator=nume;
     denominator=deno;
+    if(nume==0){numerator=0; denominator=1;}
     if(deno==0){numerator=0; denominator=1;}
     if(deno<0){numerator=-nume; denominator=-deno;}
+    this.reduce();
   }
 
   public double getValue(){
-    return 0.0;
+    return (numerator*1.0)/denominator;
   }
 
   public int getNumerator(){
@@ -22,7 +24,8 @@ public class RationalNumber extends RealNumber{
     return denominator;
   }
 
-  public RationalNumber reciporical(){
+  public RationalNumber reciprocal(){
+    if(numerator==0){RationalNumber e = new RationalNumber(0, 1); return e;}
     RationalNumber e = new RationalNumber(denominator, numerator);
     return e;
   }
@@ -37,6 +40,7 @@ public class RationalNumber extends RealNumber{
   }
 
   public static int gcd(int a, int b){
+    if(a==0||b==0){return 1;}
     int bigger=0;
     int smaller=0;
     int ans=0;
@@ -57,6 +61,7 @@ public class RationalNumber extends RealNumber{
     int gcd=gcd(numerator, denominator);
     numerator=numerator/gcd;
     denominator=denominator/gcd;
+    if(denominator<0){numerator=-numerator; denominator=-denominator;}
   }
 
   public RationalNumber multiply(RationalNumber other){
@@ -66,7 +71,7 @@ public class RationalNumber extends RealNumber{
   }
 
   public RationalNumber divide(RationalNumber other){
-    RationalNumber g = multiply(other.reciporical());
+    RationalNumber g = multiply(other.reciprocal());
     return g;
   }
 

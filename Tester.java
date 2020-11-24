@@ -10,10 +10,10 @@ public class Tester{
     RationalNumber c = new RationalNumber(11, 33);
     System.out.println(c);
     System.out.println(c.getDenominator());
-    System.out.println((c.reciporical()).getNumerator());
+    System.out.println((c.reciprocal()).getNumerator());
     RationalNumber d = new RationalNumber(33, 11);
     System.out.println(c.equals(d));
-    System.out.println(c.equals(d.reciporical()));
+    System.out.println(c.equals(d.reciprocal()));
     System.out.println(d);
     System.out.println(RationalNumber.gcd(20123132, 25632234));
     RationalNumber e = new RationalNumber(17, 100);
@@ -24,5 +24,7 @@ public class Tester{
     System.out.println(f.add(e));
     System.out.println(e.subtract(f));
     System.out.println(f.subtract(e));
+    RationalNumber g = new RationalNumber(1, 0);
+    System.out.println(e.multiply(g));
   }
 }
