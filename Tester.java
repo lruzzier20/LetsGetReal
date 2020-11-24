@@ -4,7 +4,6 @@ public class Tester{
     RealNumber b = new RealNumber(101.0);
     System.out.println(a.equals(b));
     System.out.println(a.add(b));
-    System.out.println(a);
-    System.out.println(b);
+    System.out.println(a.multiply(b));
   }
 }
