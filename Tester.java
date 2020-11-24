@@ -10,5 +10,6 @@ public class Tester{
     RationalNumber c = new RationalNumber(11, 33);
     System.out.println(c);
     System.out.println(c.getDenominator());
+    System.out.println((c.reciporical()).getNumerator());
   }
 }
