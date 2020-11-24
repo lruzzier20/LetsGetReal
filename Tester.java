@@ -16,5 +16,8 @@ public class Tester{
     System.out.println(c.equals(d.reciporical()));
     System.out.println(d);
     System.out.println(RationalNumber.gcd(20123132, 25632234));
+    RationalNumber e = new RationalNumber(100, 1000);
+    RationalNumber f = new RationalNumber(17,5);
+    System.out.println(e.multiply(f));
   }
 }

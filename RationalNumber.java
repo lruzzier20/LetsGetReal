@@ -14,11 +14,11 @@ public class RationalNumber extends RealNumber{
     return 0.0;
   }
 
-  public double getNumerator(){
+  public int getNumerator(){
     return numerator;
   }
 
-  public double getDenominator(){
+  public int getDenominator(){
     return denominator;
   }
 
@@ -57,5 +57,11 @@ public class RationalNumber extends RealNumber{
     int gcd=gcd(numerator, denominator);
     numerator=numerator/gcd;
     denominator=denominator/gcd;
+  }
+
+  public RationalNumber multiply(RationalNumber other){
+    RationalNumber f = new RationalNumber(numerator*other.getNumerator(), denominator*other.getDenominator());
+    f.reduce();
+    return f;
   }
 }
