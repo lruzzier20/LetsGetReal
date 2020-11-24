@@ -11,5 +11,9 @@ public class Tester{
     System.out.println(c);
     System.out.println(c.getDenominator());
     System.out.println((c.reciporical()).getNumerator());
+    RationalNumber d = new RationalNumber(33, 11);
+    System.out.println(c.equals(d));
+    System.out.println(c.equals(d.reciporical()));
+    
   }
 }
