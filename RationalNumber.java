@@ -69,4 +69,12 @@ public class RationalNumber extends RealNumber{
     RationalNumber g = multiply(other.reciporical());
     return g;
   }
+
+  public RationalNumber add(RationalNumber other){
+    int d=denominator*other.getDenominator();
+    int n=(numerator*other.getDenominator()) + (other.getNumerator()*denominator);
+    RationalNumber h = new RationalNumber(n, d);
+    h.reduce();
+    return h;
+  }
 }
