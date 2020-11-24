@@ -16,11 +16,13 @@ public class Tester{
     System.out.println(c.equals(d.reciporical()));
     System.out.println(d);
     System.out.println(RationalNumber.gcd(20123132, 25632234));
-    RationalNumber e = new RationalNumber(-1, 100);
+    RationalNumber e = new RationalNumber(17, 100);
     RationalNumber f = new RationalNumber(2,5);
     System.out.println(e.multiply(f));
     System.out.println(f.divide(e));
     System.out.println(e.add(f));
     System.out.println(f.add(e));
+    System.out.println(e.subtract(f));
+    System.out.println(f.subtract(e));
   }
 }
