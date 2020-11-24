@@ -7,7 +7,8 @@ public class Tester{
     System.out.println(a.multiply(b));
     System.out.println(a.divide(b));
     System.out.println(a.subtract(b));
-    RationalNumber c = new RationalNumber(0, 1);
+    RationalNumber c = new RationalNumber(11, 33);
     System.out.println(c);
+    System.out.println(c.getDenominator());
   }
 }
