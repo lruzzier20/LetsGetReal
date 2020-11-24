@@ -5,5 +5,6 @@ public class Tester{
     System.out.println(a.equals(b));
     System.out.println(a.add(b));
     System.out.println(a.multiply(b));
+    System.out.println(a.divide(b));
   }
 }

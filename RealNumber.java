@@ -27,4 +27,9 @@ public class RealNumber{
     RealNumber b = new RealNumber(value * other.getValue());
     return b;
   }
+
+  public RealNumber divide(RealNumber other){
+    RealNumber c = new RealNumber(value / other.getValue());
+    return c;
+  }
 }
