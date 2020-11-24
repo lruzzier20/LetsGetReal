@@ -64,4 +64,9 @@ public class RationalNumber extends RealNumber{
     f.reduce();
     return f;
   }
+
+  public RationalNumber divide(RationalNumber other){
+    RationalNumber g = multiply(other.reciporical());
+    return g;
+  }
 }

@@ -19,5 +19,6 @@ public class Tester{
     RationalNumber e = new RationalNumber(100, 1000);
     RationalNumber f = new RationalNumber(17,5);
     System.out.println(e.multiply(f));
+    System.out.println(f.divide(e));
   }
 }
