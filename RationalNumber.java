@@ -31,4 +31,8 @@ public class RationalNumber extends RealNumber{
     if(numerator==other.getNumerator()&&denominator==other.getDenominator()){return true;}
     return false;
   }
+
+  public String toString(){
+    return ""+numerator+"/"+denominator;
+  }
 }

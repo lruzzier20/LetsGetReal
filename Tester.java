@@ -14,6 +14,6 @@ public class Tester{
     RationalNumber d = new RationalNumber(33, 11);
     System.out.println(c.equals(d));
     System.out.println(c.equals(d.reciporical()));
-    
+    System.out.println(d);
   }
 }
