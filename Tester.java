@@ -26,5 +26,8 @@ public class Tester{
     System.out.println(f.subtract(e));
     RationalNumber g = new RationalNumber(1, 0);
     System.out.println(e.multiply(g));
+    a = new RealNumber(-Math.PI);
+    b = new RealNumber(Math.PI);
+    System.out.println("\n"+a.equals(b));
   }
 }
